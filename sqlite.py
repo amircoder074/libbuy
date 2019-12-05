@@ -6,14 +6,15 @@ dbConnection = sqlite3.connect('BookLists.db')
 db = dbConnection.cursor()
 #db.execute("CREATE TABLE members (id integer, name text, age integer)")
 
-db.execute("SELECT * from members")
+db.execute("SELECT * from members where name = 'ashkan'")
 
 #db.execute("INSERT INTO members(id, name, age) VALUES(1, 'ashkan', 14)")
 
 
 
 
-print(db.fetchall())
+a = db.fetchall()
+print(a)
 dbConnection.commit()
 #print(db)
 
