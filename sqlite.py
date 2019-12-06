@@ -3,6 +3,9 @@ import sqlite3
 
 dbConnection = sqlite3.connect('BookLists.db')
 
+def hello() :
+    print('hello')
+
 db = dbConnection.cursor()
 #db.execute("CREATE TABLE members (id integer, name text, age integer)")
 
