@@ -3,7 +3,7 @@ import sqlite3
 
 dbConnection = sqlite3.connect('BookLists.db')
 
-def hello() :
+def Mamad() :
     print('hello')
 
 db = dbConnection.cursor()
